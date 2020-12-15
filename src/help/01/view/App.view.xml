@@ -11,6 +11,9 @@
 						<Panel
 							headerText="{i18n>helloPanelTitle}">
 							<content>
+							<Label text="Input" labelFor="input-b" design="Bold" /> <Input id="input-b" />
+							<Label text="Label C (normal)" labelFor="input-c" />
+							<Input id="input-c" />							
 								<Button
 									text="{i18n>showHelloButtonText}"
 									press=".onShowHello"/>
