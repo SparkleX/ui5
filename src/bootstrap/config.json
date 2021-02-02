@@ -1,0 +1,57 @@
+{
+	"defaultRenderer": "fiori2",
+	"renderers": {
+		"fiori2": {
+			"componentData": {
+				"config": {
+					"enableActionModeMenuButton": true,
+					"search": "hidden"
+				}
+			}
+		}
+	},
+	"services": {
+		"LaunchPage": {
+			"adapter": {
+				"config": {
+					"groups": [
+						{
+							"id": "group_1",
+							"title": "My Home",
+							"tiles": [
+								{
+									"id": "sap_ushell_generated_tile_id_0",
+									"title": "Card Scanner",
+									"size": "1x1",
+									"tileType": "sap.ushell.ui.tile.StaticTile",
+									"properties": {
+										"chipId": "sap_ushell_generated_chip_id",
+										"title": "Card Scanner",
+										"info": "Scann Business Cards",
+										"targetURL": "#CardScan-App",
+										"icon": "sap-icon://camera"
+									}
+								}
+							]
+						}
+					]
+				}
+			}
+		},
+		"NavTargetResolution": {
+			"adapter": {
+				"config": {
+					"applications": {
+						"CardScan-App": {
+							"additionalInformation": "SAPUI5.Component=poc.CardScan",
+							"applicationType": "URL",
+							"url": "/CardScan",
+							"description": "Scan Cards",
+							"title": "Cards Scanner"
+						}
+					}
+				}
+			}
+		}
+	}
+}
