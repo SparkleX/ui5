@@ -1,0 +1,8 @@
+---
+applications:
+  - name: b1poc
+    random-route: true
+    path: .
+    memory: 128M
+    routes:
+      - route: b1poc.cfapps.eu10.hana.ondemand.com
