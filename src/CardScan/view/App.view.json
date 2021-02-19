@@ -1,0 +1,18 @@
+{
+	"Type": "sap.ui.core.mvc.View",
+	"controllerName": "poc.CardScan.controller.App",
+	"content": [
+		{
+			"Type": "sap.m.Button",
+			"id": "myButton1",
+			"text": "load View",
+			"press": ".loadView1"
+		},
+		{
+			"Type": "sap.m.Button",
+			"id": "myButton2",
+			"text": "load View 2",
+			"press": ".loadView2"
+		}
+	]
+}

@@ -1,0 +1,10 @@
+<mvc:View controllerName="poc.CardScan.controller.View1"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:unified="sap.ui.unified" 
+	xmlns:core="sap.ui.core"
+	id="myView2">
+	<Button id="myButton2" text="Button View 2" press = ".pressButton2"></Button>
+
+
+</mvc:View>

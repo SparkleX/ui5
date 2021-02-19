@@ -3,13 +3,30 @@ sap.ui.define(
 	function (BaseClass, MessageToast, Fragment) {
 		"use strict";
 
-		var no = 1;
 		var theClass = BaseClass.extend("poc.CardScan.controller.App", {});
-	
-		theClass.prototype.onUploadComplete= function () {
-			MessageToast.show(`sap-icon://business-card Leads "SCAN_${no}" created`);
-			no++;
-		}
+		theClass.prototype.onInit = function () {
+			//const oApp = this.byId("app");
+			//console.debug(oApp);
+			alert(1);
+		};
+		theClass.prototype.loadView1 = function () {
+			var oView = new sap.ui.core.mvc.XMLView({
+				id: "myView1",
+				viewName: "poc.CardScan.view.View1",
+				type: sap.ui.core.mvc.ViewType.XML
+			});
+			console.debug(oView);
+			this.getView().addContent(oView);
+		};
+		theClass.prototype.loadView2 = function () {
+			var oView = new sap.ui.core.mvc.XMLView({
+				id: "myView2",
+				viewName: "poc.CardScan.view.View2",
+				type: sap.ui.core.mvc.ViewType.XML
+			});
+			console.debug(oView);
+			this.getView().addContent(oView);
+		};
 		return theClass;
 	}
 );

@@ -25,7 +25,7 @@
 	"sap.ui5": {
 		"rootView": {
 			"viewName": "poc.CardScan.view.App",
-			"type": "XML",
+			"type": "JSON",
 			"async": true,
 			"id": "app"
 		},

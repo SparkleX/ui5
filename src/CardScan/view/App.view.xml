@@ -4,18 +4,13 @@
 	xmlns:unified="sap.ui.unified" 
 	xmlns:core="sap.ui.core"
 	displayBlock="true">
-	<Shell backgroundColor="#ffffff" width="100%">
+	<Button text="load View1" press = ".loadView1"></Button>
+	<Button text="load View2" press = ".loadView2"></Button>
+
+<!--	<Shell backgroundColor="#ffffff" width="100%">
 		<App id="app">
-			<Panel headerText="Business Cards Sacnner" height="100%">
-				<FlexBox  direction="Column"  alignItems="Center">
-					<core:Icon src="sap-icon://business-card" color= "Tile" size="2rem" />
-					<Text text="Powered by SAP Cloud Platform , AI Services" />		
-					<Text text="" />						
-					<unified:FileUploader id="fileUploader"  buttonText="Scan &amp; Add Cards" buttonOnly="true" icon="sap-icon://camera" style="Emphasized" uploadOnChange="true" uploadComplete=".onUploadComplete"></unified:FileUploader>
-					<Button press="onUploadComplete"/>
-				</FlexBox>					
-			</Panel>
+
 		</App>
-	</Shell>
+	</Shell>-->
 
 </mvc:View>
